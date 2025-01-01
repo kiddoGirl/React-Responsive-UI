@@ -36,7 +36,7 @@ Follow the steps below to get your project up and running:
     npm start
     ```
 
-Your application will now be running on `http://localhost:3000`.
+The application will now be running on `http://localhost:3000`.
 
 ## Technologies Used
 - **React**: JavaScript library for building user interfaces
