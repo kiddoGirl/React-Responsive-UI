@@ -646,8 +646,8 @@ body {
   background-color: #ffffff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 1440px;
-  height: 1216px;
-  padding: 96px 0px 96px 0px;
+  height: 800px;
+  padding: 96px;
   gap: 64px;
 }
 
@@ -786,7 +786,10 @@ body {
   text-align: left;
   background-color: #6941C6;
   color: #d0d5dd;
-  margin-top: 10px !important;
+  margin-left: 300px !important;
+  margin-top: 25px !important;
+  align-items: center;
+  justify-content: center;
 }
 
 .blog-grid {

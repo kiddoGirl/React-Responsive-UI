@@ -102,7 +102,7 @@ const FaqSection = () => {
 
               <p className="faq-title">Still have questions?</p>
               <p className="faq-contents">Can not find the answer you’re looking for? Please chat to our friendly team.</p>
-              <button>Get In touch</button>
+              <button style={{margin: 'auto'}}>Get In touch</button>
 
             </div>
 
