@@ -6,6 +6,7 @@ import HeroSection from './components/hero';
 import FeaturesSection from './components/features';
 import FeaturesWithTestimonial from './components/testinominal';
 import FaqSection from './components/faq';
+import BlogSection from './components/blog';
 import FooterSection from './components/footer';
 
 
@@ -18,6 +19,7 @@ function App() {
       <FeaturesSection />
       <FeaturesWithTestimonial />
       <FaqSection />
+      <BlogSection />
       <FooterSection />
     </div>
 

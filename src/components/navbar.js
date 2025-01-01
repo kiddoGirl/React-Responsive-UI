@@ -22,8 +22,8 @@ const Navbar = () => {
         
         <div className="navbar-left">
 
-          <img src="/Logomark.png" alt="Logo" className="navbar-logo" />
-          <img src="/Vector.png" alt="Vector Logo" className="vector-logo" />
+          <img src="/brand.png" alt="Logo" className="navbar-logo" />
+        
           <button className="nav-link">Home</button>
 
           <div

@@ -13,15 +13,22 @@ const FaqSection = () => {
 
     <div className="faq-section">
 
+      <div className="faq-intro">
+
         <h3>Frequently Asked Questions</h3>
 
         <p>Everything you need to know about the product and billing.</p>
+
+      </div>
+
+
+      <div className="faq-container">
 
         <div className="faq-item" onClick={() => toggleQuestion(0)}>
 
           <div className="faq-question">
             Is there a free trial available?
-            <span>{openQuestion === 0 ? "−" : "+"}</span>
+            <span className="faq-icon">{openQuestion === 0 ? "−" : "+"}</span>
           </div>
 
           {openQuestion === 0 && (
@@ -37,7 +44,7 @@ const FaqSection = () => {
 
           <div className="faq-question">
             Can I change my plan later?
-            <span>{openQuestion === 1 ? "−" : "+"}</span>
+            <span className="faq-icon">{openQuestion === 1 ? "−" : "+"}</span>
           </div>
 
           {openQuestion === 1 && <div className="faq-answer">Yes, you can upgrade or downgrade your plan anytime.</div>}
@@ -48,7 +55,7 @@ const FaqSection = () => {
 
           <div className="faq-question">
             What is your cancellation policy?
-            <span>{openQuestion === 2 ? "−" : "+"}</span>
+            <span className="faq-icon">{openQuestion === 2 ? "−" : "+"}</span>
           </div>
 
           {openQuestion === 2 && <div className="faq-answer">You can cancel anytime, and your subscription will remain active until the end of the billing cycle.</div>}
@@ -59,7 +66,7 @@ const FaqSection = () => {
 
           <div className="faq-question">
             Can other info be added to an invoice?
-            <span>{openQuestion === 3 ? "−" : "+"}</span>
+            <span className="faq-icon">{openQuestion === 3 ? "−" : "+"}</span>
           </div>
 
           {openQuestion === 3 && <div className="faq-answer">Yes, you can customize invoices with additional information as needed.</div>}
@@ -70,41 +77,32 @@ const FaqSection = () => {
 
           <div className="faq-question">
             How does billing work?
-            <span>{openQuestion === 4 ? "−" : "+"}</span>
+            <span className="faq-icon">{openQuestion === 4 ? "−" : "+"}</span>
           </div>
 
           {openQuestion === 4 && <div className="faq-answer">We bill you at the beginning of each billing cycle based on your subscription plan.</div>}
         </div>
 
-        <div className="faq-container">
+      </div>
+
+
+        <div className="faq-img-container">
 
             <div className="faq-img">
 
-                <img
-                    src="/profile-2.png"
-                    alt="Candice Wu"
-                    className="author-image"
-                />
-
-                <img
-                    src="/profile.png"
-                    alt="Candice Wu"
-                    className="author-image"
-                />
-
-                <img
-                    src="/avatar.png"
-                    alt="Candice Wu"
-                    className="author-image"
-                />
+              <img
+                src="/Avatar group.png"
+                alt="Candice Wu"
+                className="author-image1"
+              />
 
             </div>
 
             <div className="faq-content">
 
-                <p>Still have questions?</p>
-                <p>Can not find the answer you’re looking for? Please chat to our friendly team.</p>
-                <button>Get In touch</button>
+              <p className="faq-title">Still have questions?</p>
+              <p className="faq-contents">Can not find the answer you’re looking for? Please chat to our friendly team.</p>
+              <button>Get In touch</button>
 
             </div>
 

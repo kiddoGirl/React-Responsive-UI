@@ -3,79 +3,84 @@ import "../index.css";
 
 const BlogSection = () => {
 
+  const blogs = [
+
+    {
+      category: "Design",
+      title: "UX review presentations",
+      description: "How do you create compelling presentations that wow your colleagues and impress your managers?",
+      author: "Olivia Rhye",
+      date: "20 Jan 2024",
+      blogImage: "/blog-3.png",
+      profileImage: "/profile.png",
+      arrowImage: "/arrow.png",
+    },
+
+    {
+      category: "Product",
+      title: "Migrating to Linear 101",
+      description: "Linear helps streamline software projects, sprints, tasks, and bug tracking. Here’s how to get started.",
+      author: "Phoenix Baker",
+      date: "19 Jan 2024",
+      blogImage: "/blog-1.png",
+      profileImage: "/profile-2.png",
+      arrowImage: "/arrow.png",
+    },
+
+    {
+      category: "Software Engineering",
+      title: "Building your API stack",
+      description: "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.",
+      author: "Lana Steiner",
+      date: "18 Jan 2024",
+      blogImage: "/blog-2.png",
+      profileImage: "/profile-3.png",
+      arrowImage: "/arrow.png",
+    },
+
+  ];
+
+
   return (
 
-    <div className="blog-section">
+    <div className="blog-grid">
 
-        <h3>Latest Blog Posts</h3>
 
-        <p>Tools and strategies modern teams need to help their companies grow.</p>
+      {blogs.map((blog, index) => (
 
-        <div className="blog-cards">
+        <div className="blog-container" key={index}>
 
-            <div className="blog-card">
 
-                <img src="/blog-3.jpg" alt="Blog Post 1" className="blog-image" />
+          <img src={blog.blogImage} alt="Blog" className="blog-image" />
 
-                <h4>UX Review Presentations</h4>
+          <p className="blog-category">{blog.category}</p>
 
-                <p>How do you create compelling presentations that wow your colleagues and impress your managers?</p>
+          <h3 className="blog-title">
+            {blog.title}{" "}
+            <img src={blog.arrowImage} alt="Arrow" className="arrow-icon" />
+          </h3>
 
-                <span>Design | Olivia Rhye | 20 Jan 2024</span>
+          <p className="blog-description">{blog.description}</p>
 
+          <div className="blog-footer">
+
+            <img src={blog.profileImage} alt="Author" className="profile-image" />
+
+            <div className="author-details">
+              <p className="author-name">{blog.author}</p>
+              <p className="blog-date">{blog.date}</p>
             </div>
 
-
-            <div className="blog-card">
-
-                <img src="/blog-1.jpg" alt="Blog Post 2" className="blog-image" />
-
-                <h4>Migrating to Linear 101</h4>
-
-                <p>Linear helps streamline software projects, sprints, tasks, and bug tracking. Here's how to get started.</p>
-
-                <span>Product | Phoenix Baker | 19 Jan 2024</span>
-
-            </div>
-
-
-            <div className="blog-card">
-
-                <img src="/blog-2.jpg" alt="Blog Post 3" className="blog-image" />
-
-                <h4>Building Your API Stack</h4>
-
-                <p>The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.</p>
-
-                <span>Software Engineering | Lana Steiner | 18 Jan 2024</span>
-
-            </div>
-
+          </div>
 
         </div>
 
-        <button className="view-all-btn">View All Posts</button>
-
-    
-        <div className="cta-section">
-
-            <h3>Start your free trial</h3>
-
-            <p>Join over 4,000+ startups already growing with Untitled.</p>
-
-            <div className="cta-buttons">
-                <button className="learn-more-btn">Learn More</button>
-                <button className="get-started-btn">Get Started</button>
-            </div>
-
-        </div>
+      ))}
 
     </div>
-   
 
   );
+
 };
 
 export default BlogSection;
-
-
