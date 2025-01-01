@@ -21,17 +21,12 @@ Follow the steps below to get your project up and running:
     git clone https://github.com/yourusername/project-repository-name.git
     ```
 
-2. **Navigate to the project directory**:
-    ```bash
-    cd React-Responsive-UI
-    ```
-
-3. **Install dependencies**:
+2. **Install dependencies**:
     ```bash
     npm install
     ```
 
-4. **Run the project**:
+3. **Run the project**:
     ```bash
     npm start
     ```
