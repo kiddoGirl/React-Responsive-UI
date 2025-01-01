@@ -8,12 +8,19 @@ const FeaturesSection = () => {
 
     <div className="features-container">
 
-      <h2>Analytics that feels like it is from the future</h2>
+      <div className="feature-intro">
 
-      <p>
-        Powerful, self-serve product and growth analytics to help you convert,
-        engage, and retain more users. Trusted by over 4,000 startups.
-      </p>
+        <p className="features">Features</p>
+
+        <h2>Analytics that feels like it is from the future</h2>
+
+        <p className="features-content">
+          Powerful, self-serve product and growth analytics to help you convert,
+          engage, and retain more users. Trusted by over 4,000 startups.
+        </p>
+
+
+      </div>
 
       <div className="features-grid">
 

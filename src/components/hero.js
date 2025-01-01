@@ -7,26 +7,38 @@ const HeroSection = () => {
 
     <section className="hero">
 
-      <div className="hero-top-bar">
+      <div className="hero-intro">
 
-        <button className="new-feature">New feature</button>
+        <div className="hero-top-bar">
 
-        <p className="check-dashboard">Check out the team dashboard</p>
+          <button className="new-feature">New feature</button>
 
-      </div>
+          <p className="check-dashboard">Check out the team dashboard &#8594;</p>
 
-      <h1 className="hero-title">Beautiful analytics to grow smarter</h1>
-      <p className="hero-description">
+        </div>
+
+        <h1 className="hero-title">Beautiful analytics to grow smarter</h1>
+
+        <p className="hero-description">
         Powerful, self-serve product and growth analytics to help you
         convert, engage, and retain more users. Trusted by over 4,000
         startups.
-      </p>
+        </p>
 
 
-      <div className="hero-actions">
-        <button className="demo-btn">Demo</button>
-        <button className="signup-btn">Sign up</button>
+        <div className="hero-actions">
+
+          <button className="demo-btn">
+            <img src="/play-circle.png" alt="Demo Icon" className="demo-icon" />
+            Demo
+          </button>
+
+          <button className="signup-btn">Sign up</button>
+
+        </div>
+
       </div>
+
 
       <div className="hero-image-container">
         <img
@@ -34,6 +46,57 @@ const HeroSection = () => {
           alt="Dashboard screenshot"
           className="hero-image"
         />
+
+        <div className="sponsers">
+
+          <div className="sponsers-container">
+
+            <p className="sponser-content">Join 4,000+ companies already growing</p>
+
+            <div className="sponsers-icon">
+
+              <img
+                src="/Fictional-company-logo.png"
+                alt="Dashboard screenshot"
+                className="sponser-image"
+              />
+
+              <img
+                src="/Fictional-company-logo-1.png"
+                alt="Dashboard screenshot"
+                className="sponser-image"
+              />
+
+              <img
+                src="/Fictional-company-logo-2.png"
+                alt="Dashboard screenshot"
+                className="sponser-image"
+              />
+              
+              <img
+                src="/Fictional-company-logo-3.png"
+                alt="Dashboard screenshot"
+                className="sponser-image"
+              />
+
+              <img
+                src="/Fictional-company-logo-4.png"
+                alt="Dashboard screenshot"
+                className="sponser-image"
+              />
+
+              <img
+                src="/Fictional-company-logo-5.png"
+                alt="Dashboard screenshot"
+                className="sponser-image"
+              />
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
 
     </section>
